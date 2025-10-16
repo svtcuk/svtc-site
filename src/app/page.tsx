@@ -17,7 +17,6 @@ import {
   ArrowRight,
   Award,
   Building2,
-  Phone,
 } from "lucide-react";
 
 // Brand palette (reference)
@@ -66,7 +65,7 @@ export default function Site() {
               Specialist Sexual Violence Training & Consultancy
             </h1>
             <p className="mt-4 text-lg text-slate-800 max-w-prose font-[Poppins]">
-              We equip healthcare and allied professionals with the knowledge, confidence, and practical tools to provide safe, effective, and compassionate care for survivors of sexual violence.
+              We work with organisations across sectors — healthcare, education, corporate and charities — to build confidence, competence and culture change. Alongside survivor-centred training, we deliver workplace sexual harassment programmes and strategic consultancy. Available <strong>in person</strong>, <strong>online</strong>, and <strong>on-demand</strong>.
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <a href="#contact">
@@ -81,7 +80,7 @@ export default function Site() {
               </a>
             </div>
             <ul className="mt-6 grid grid-cols-2 gap-4 text-sm text-slate-800">
-              <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4" /> NHS-proven training</li>
+              <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4" /> Sector-experienced facilitators</li>
               <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4" /> Trauma-informed pedagogy</li>
               <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4" /> Practical, scenario-based</li>
               <li className="flex items-center gap-2"><CheckCircle className="h-4 w-4" /> Aligned with UK guidance</li>
@@ -107,9 +106,13 @@ export default function Site() {
       {/* Trust Bar */}
       <section className="border-y border-[#c39b6a]/40 bg-[#f4f1eb]">
         <div className="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-4 gap-6 text-sm">
-          <TrustItem icon={<Building2 className="h-5 w-5" />} title="NHS & public sector" desc="Experience across trusts & ICS" />
-          <TrustItem icon={<Award className="h-5 w-5" />} title="Evidence-informed" desc="Grounded in psych & psychiatry" />
-          <TrustItem icon={<Workflow className="h-5 w-5" />} title="Practical tools" desc="Checklists, scripts, pathways" />
+          <TrustItem icon={<Building2 className="h-5 w-5" />} title="Public & private sector" desc="Experience across NHS, education & corporate" />
+          <TrustItem icon={<Award className="h-5 w-5" />} title="Evidence-informed" desc="Grounded in psych & best practice" />
+          <TrustItem
+            icon={<Workflow className="h-5 w-5" />}
+            title="Practical tools"
+            desc="Org development, assessment, documentation, reinforcement & communication"
+          />
           <TrustItem icon={<HeartHandshake className="h-5 w-5" />} title="Survivor-centred" desc="Compassionate & safe practice" />
         </div>
       </section>
@@ -122,20 +125,27 @@ export default function Site() {
               Consultancy & Training Services
             </h2>
             <p className="mt-4 text-slate-800 max-w-prose font-[Poppins]">
-              From bite-size workshops to whole-system transformation, we help organisations raise confidence, competence, and consistency in sexual violence response. Engagements can be delivered on-site or online across the UK.
+              Because awareness isn’t enough — transformation is. We partner with organisations ready to raise the standard and embed trauma-informed principles across teams, policies and culture. Delivery available UK-wide, on-site or online.
             </p>
-            <ul className="mt-6 space-y-3 text-slate-800">
-              <li className="flex items-start gap-3"><Briefcase className="mt-1 h-5 w-5" /> Bespoke consultancy: pathway mapping, policy & SOPs, referral routes, and quality improvement.</li>
-              <li className="flex items-start gap-3"><Users className="mt-1 h-5 w-5" /> Team training & CPD: interactive, scenario-based sessions tailored to role and cohort.</li>
-              <li className="flex items-start gap-3"><BookOpenCheck className="mt-1 h-5 w-5" /> Supervision & reflective practice for teams working with survivors.</li>
-              <li className="flex items-start gap-3"><Lightbulb className="mt-1 h-5 w-5" /> Service design: survivor-centred improvement projects and implementation support.</li>
-            </ul>
+
+            <div className="mt-6 space-y-4 text-slate-800">
+              <p className="font-semibold">What we deliver</p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3"><Briefcase className="mt-1 h-5 w-5" /> <b>Specialist Training &amp; CPD</b> — interactive, evidence-based programmes tailored to role, sector and goals.</li>
+                <li className="flex items-start gap-3"><Users className="mt-1 h-5 w-5" /> <b>Strategic Consultancy</b> — policy development, risk audits, cultural change and leadership coaching.</li>
+                <li className="flex items-start gap-3"><BookOpenCheck className="mt-1 h-5 w-5" /> <b>Supervision &amp; Reflective Practice</b> — structured support for teams working with survivors.</li>
+                <li className="flex items-start gap-3"><Lightbulb className="mt-1 h-5 w-5" /> <b>Service Design &amp; Policy</b> — survivor-centred pathways, SOPs and safeguarding strategies.</li>
+                <li className="flex items-start gap-3"><Workflow className="mt-1 h-5 w-5" /> <b>Resources &amp; Toolkits</b> — organisational development tools, assessment & response tools, documentation & reporting tools, knowledge reinforcement tools, and communication & language tools.</li>
+              </ul>
+            </div>
+
             <div className="mt-6">
               <a href="#contact">
                 <Button className="rounded-2xl bg-[#d0893e] hover:bg-[#c39b6a] text-black font-[Poppins]">Enquire about availability</Button>
               </a>
             </div>
           </div>
+
           <div className="grid gap-6">
             <Card className="rounded-2xl">
               <CardHeader>
@@ -143,19 +153,21 @@ export default function Site() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-slate-800">
-                  <li className="flex items-start gap-2"><CheckCircle className="mt-1 h-4 w-4" /> Staff equipped to respond to disclosures confidently and safely</li>
-                  <li className="flex items-start gap-2"><CheckCircle className="mt-1 h-4 w-4" /> Clear local pathways and referral options understood by all</li>
-                  <li className="flex items-start gap-2"><CheckCircle className="mt-1 h-4 w-4" /> Reduced re-traumatisation via trauma-informed communication</li>
-                  <li className="flex items-start gap-2"><CheckCircle className="mt-1 h-4 w-4" /> Better data capture and documentation aligned to guidance</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="mt-1 h-4 w-4" /> Clear, accountable processes for addressing sexual harassment and workplace harm</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="mt-1 h-4 w-4" /> Confident, trauma-informed responses to disclosure</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="mt-1 h-4 w-4" /> Pathways and referral routes understood by all staff</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="mt-1 h-4 w-4" /> Reduced re-traumatisation through language and behaviour change</li>
+                  <li className="flex items-start gap-2"><CheckCircle className="mt-1 h-4 w-4" /> Sustainable culture shift underpinned by evidence, leadership & integrity</li>
                 </ul>
               </CardContent>
             </Card>
+
             <Card className="rounded-2xl">
               <CardHeader>
-                <CardTitle>Who we train</CardTitle>
+                <CardTitle>Who we partner with</CardTitle>
               </CardHeader>
               <CardContent className="text-slate-800">
-                Primary & acute care, urgent care, mental health, safeguarding teams, school nursing, social care, charities, police partners, and university health services.
+                Corporate & private sector, NHS & health services, education & universities, local authorities & safeguarding, charities & NGOs, police & partner agencies.
               </CardContent>
             </Card>
           </div>
@@ -167,26 +179,30 @@ export default function Site() {
         <div className="max-w-6xl mx-auto px-4 py-20">
           <h2 className="text-3xl font-bold tracking-tight text-[#4b2e1d] font-[Nunito]">Training Programmes</h2>
           <p className="mt-3 text-slate-800 max-w-prose">
-            Modular content tailored by role, level, and local policy. Each programme includes slide deck, facilitator guide, handouts, pathways, and evaluation tools.
+            Our CPD-accredited training goes beyond awareness — it builds confidence, competence and culture change. Sessions delivered in-person, online, or as hybrid workshops.
           </p>
           <div className="mt-8 grid md:grid-cols-3 gap-6">
             <ProgrammeCard
               title="Effective Handling of Disclosures"
-              subtitle="Recognise, respond, refer"
+              subtitle="Recognise • Respond • Refer"
               bullets={[
-                "Indicators & first response",
-                "Do/Don't when discussing options",
-                "Documentation & onward referral",
+                "Trauma-informed first responses",
+                "Empathic, professional communication",
+                "Confidentiality, safeguarding & duties",
+                "Internal/external referral pathways",
+                "Team action planning",
               ]}
               duration="1 day"
             />
             <ProgrammeCard
               title="Preventing Workplace Sexual Harassment & New Legal Duties"
-              subtitle="Culture, policy, compliance"
+              subtitle="Culture • Policy • Compliance"
               bullets={[
-                "Legal duties & employer obligations",
-                "Reporting routes & bystander intervention",
-                "Investigation principles & support",
+                "UK legislation & employer duties",
+                "Identify risks & policy gaps",
+                "Consistent response to reports",
+                "Prevention strategies & bystander action",
+                "Leadership accountability & data",
               ]}
               duration="1 day"
             />
@@ -195,8 +211,10 @@ export default function Site() {
               subtitle="Foundations for all staff"
               bullets={[
                 "Forms & prevalence",
-                "Impact & trauma-informed care",
-                "Local pathways & support",
+                "Impact & trauma responses",
+                "Challenging myths & narratives",
+                "Indicators & appropriate response",
+                "Embedding survivor-centred practice",
               ]}
               duration="1 day"
             />
@@ -208,7 +226,7 @@ export default function Site() {
       <section id="approach" className="max-w-6xl mx-auto px-4 py-20">
         <div className="grid md:grid-cols-3 gap-6">
           <Approach icon={<Shield className="h-6 w-6" />} title="Trauma-informed" desc="Psychological safety is baked into our content and facilitation." />
-          <Approach icon={<GraduationCap className="h-6 w-6" />} title="Evidence-led" desc="Grounded in psychiatry & psychology, aligned with UK guidance." />
+          <Approach icon={<GraduationCap className="h-6 w-6" />} title="Evidence-led" desc="Grounded in psychology & aligned with UK guidance." />
           <Approach icon={<Users className="h-6 w-6" />} title="Co-designed" desc="Developed with practitioners and survivor input where appropriate." />
         </div>
       </section>
@@ -217,14 +235,17 @@ export default function Site() {
       <section id="sectors" className="bg-[#f4f1eb] border-y border-[#c39b6a]/40">
         <div className="max-w-6xl mx-auto px-4 py-20">
           <h2 className="text-3xl font-bold tracking-tight text-[#4b2e1d] font-[Nunito]">Sectors we support</h2>
+          <p className="mt-3 text-slate-800 max-w-prose">
+            We work with organisations across every sector — from corporate and education to healthcare, local government, charities and partner agencies.
+          </p>
           <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-slate-800">
             {[
+              "Corporate & private sector",
+              "Education & universities",
               "NHS trusts & ICS",
               "Primary care & PCNs",
               "Mental health services",
               "Urgent & emergency care",
-              "Safeguarding teams",
-              "Universities & colleges",
               "Local authorities",
               "Charities & NGOs",
               "Police & partner agencies",
@@ -241,9 +262,21 @@ export default function Site() {
       <section id="testimonials" className="max-w-6xl mx-auto px-4 py-20">
         <h2 className="text-3xl font-bold tracking-tight text-[#4b2e1d] font-[Nunito]">What clients say</h2>
         <div className="mt-6 grid md:grid-cols-3 gap-6">
-          <Testimonial quote="One of the most impactful trainings our team has had—practical, compassionate, and immediately applicable." name="Clinical Lead" org="NHS Trust" />
-          <Testimonial quote="Clear pathways and scripts transformed the confidence of frontline staff." name="Service Manager" org="Integrated Care System" />
-          <Testimonial quote="Expertly facilitated with sensitivity to staff and survivor wellbeing." name="Safeguarding Lead" org="University Health" />
+          <Testimonial
+            quote="One of the most impactful trainings our team has had—practical, compassionate, and immediately applicable."
+            name="Clinical Lead"
+            org="NHS Trust"
+          />
+          <Testimonial
+            quote="Clear pathways and language have transformed our frontline confidence."
+            name="Service Manager"
+            org=""
+          />
+          <Testimonial
+            quote="Our managers now feel confident having difficult conversations, and we’ve already seen an increase in safer team dynamics."
+            name="Head of HR Department"
+            org=""
+          />
         </div>
       </section>
 
@@ -253,12 +286,10 @@ export default function Site() {
           <div>
             <h2 className="text-3xl font-bold tracking-tight font-[Nunito]">Let’s talk</h2>
             <p className="mt-3 text-[#f4f1eb]/80 max-w-prose">
-              Tell us about your team, cohort and goals. We’ll suggest a right-sized option and share a draft outline.
+              Tell us about your team, sector and goals. We’ll suggest a right-sized option and share a draft outline.
             </p>
-            <p className="mt-4 text-sm text-[#f4f1eb]/70">Email address is being set up — please use the form for now.</p>
             <div className="mt-6 space-y-2 text-sm text-[#f4f1eb]/80">
-              <div className="flex items-center gap-2"><Mail className="h-4 w-4" /> hello@svtc.example</div>
-              <div className="flex items-center gap-2"><Phone className="h-4 w-4" /> +44 (0)20 0000 0000</div>
+              <div className="flex items-center gap-2"><Mail className="h-4 w-4" /> hello@svtc.uk</div>
             </div>
           </div>
           <Card className="bg-white text-slate-900 rounded-2xl">
@@ -266,7 +297,7 @@ export default function Site() {
               <CardTitle>Request a proposal</CardTitle>
             </CardHeader>
             <CardContent>
-              {/* Replace action with Formspree/Formspark endpoint */}
+              {/* TODO: Replace action with Formspree/Formspark endpoint */}
               <form action="#" method="POST" className="grid gap-4">
                 <div className="grid gap-2">
                   <label htmlFor="name" className="text-sm font-medium">Name</label>
@@ -274,11 +305,11 @@ export default function Site() {
                 </div>
                 <div className="grid gap-2">
                   <label htmlFor="org" className="text-sm font-medium">Organisation</label>
-                  <Input id="org" name="organisation" placeholder="e.g., NHS Trust / University" />
+                  <Input id="org" name="organisation" placeholder="e.g., Corporate / NHS Trust / University" />
                 </div>
                 <div className="grid gap-2">
                   <label htmlFor="email" className="text-sm font-medium">Work email</label>
-                  <Input id="email" type="email" name="email" placeholder="you@organisation.nhs.uk" required />
+                  <Input id="email" type="email" name="email" placeholder="you@organisation.co.uk" required />
                 </div>
                 <div className="grid gap-2">
                   <label htmlFor="message" className="text-sm font-medium">What do you need?</label>
@@ -322,7 +353,7 @@ export default function Site() {
 type ProgrammeProps = { title: string; duration: string; level: string };
 function Programme({ title, duration, level }: ProgrammeProps) {
   return (
-    <div className="flex items-start gap-3">
+    <div className="flex items-start gap-3 font-[Poppins]">
       <div className="mt-1"><CheckCircle className="h-4 w-4" /></div>
       <div>
         <p className="font-medium">{title}</p>
@@ -335,7 +366,7 @@ function Programme({ title, duration, level }: ProgrammeProps) {
 type TrustItemProps = { icon: React.ReactNode; title: string; desc: string };
 function TrustItem({ icon, title, desc }: TrustItemProps) {
   return (
-    <div className="flex items-start gap-3">
+    <div className="flex items-start gap-3 font-[Poppins]">
       <div className="mt-1">{icon}</div>
       <div>
         <p className="font-medium">{title}</p>
@@ -348,7 +379,7 @@ function TrustItem({ icon, title, desc }: TrustItemProps) {
 type ProgrammeCardProps = { title: string; subtitle: string; bullets: string[]; duration: string };
 function ProgrammeCard({ title, subtitle, bullets, duration }: ProgrammeCardProps) {
   return (
-    <Card className="rounded-2xl h-full">
+    <Card className="rounded-2xl h-full font-[Poppins]">
       <CardHeader>
         <CardTitle className="leading-tight">
           <span className="block text-slate-500 text-sm">{title}</span>
@@ -370,7 +401,7 @@ function ProgrammeCard({ title, subtitle, bullets, duration }: ProgrammeCardProp
 type ApproachProps = { icon: React.ReactNode; title: string; desc: string };
 function Approach({ icon, title, desc }: ApproachProps) {
   return (
-    <Card className="rounded-2xl">
+    <Card className="rounded-2xl font-[Poppins]">
       <CardHeader className="flex flex-row items-center gap-3">
         {icon}
         <CardTitle>{title}</CardTitle>
@@ -380,13 +411,13 @@ function Approach({ icon, title, desc }: ApproachProps) {
   );
 }
 
-type TestimonialProps = { quote: string; name: string; org: string };
-function Testimonial({ quote, name, org }: TestimonialProps) {
+type TestimonialProps = { quote: string; name: string; org?: string };
+function Testimonial({ quote, name, org = "" }: TestimonialProps) {
   return (
-    <Card className="rounded-2xl h-full">
+    <Card className="rounded-2xl h-full font-[Poppins]">
       <CardContent className="pt-6">
         <p className="italic">“{quote}”</p>
-        <p className="mt-4 text-sm text-slate-600">{name} — {org}</p>
+        <p className="mt-4 text-sm text-slate-600">{name}{org ? ` — ${org}` : ""}</p>
       </CardContent>
     </Card>
   );
