@@ -432,6 +432,7 @@ function Testimonial({ quote, name, org = "" }: TestimonialProps) {
     </Card>
   );
 }
+
 // app/thanks/page.tsx
 export default function Thanks() {
   return (
