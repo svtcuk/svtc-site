@@ -432,9 +432,9 @@ function Testimonial({ quote, name, org = "" }: TestimonialProps) {
     </Card>
   );
 }
+src/app/thanks/page.tsx
+// src/app/thanks/page.tsx
 
-// app/thanks/page.tsx
-export default function Thanks() {
   return (
     <main className="min-h-screen bg-[#f4f1eb] text-slate-900">
       <div className="max-w-2xl mx-auto px-4 py-24 text-center">
