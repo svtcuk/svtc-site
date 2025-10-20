@@ -1,0 +1,6 @@
+# netlify.toml — minimal config, no plugins
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# (No [[plugins]] block on purpose)
